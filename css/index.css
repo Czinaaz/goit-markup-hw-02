@@ -1,29 +1,34 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 *{
     font-family: 'Roboto', 'Raleway' sans-serif;
-    text-decoration: inherit;
     margin: auto;
-    position: relative;
-
+     
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
-.wrapper {
-    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
-    margin: auto;
-    width: max-content;
+.container {
+    max-width: 1200px;
     justify-content: center;
-    display: inline;
+    display: flexbox;
     background: #FFFFFF;
+    margin-left: auto;
+    margin-right: auto;
 }
-
 header {
     display: flex;
-    margin-top: 32px;
-    margin-bottom: 32px;
     color: #212121;
     font-size: 16px;
     line-height: 1.14;
     text-decoration: none;
-    border-bottom: #212121 10px;
 }
 
 
@@ -75,122 +80,105 @@ body {
     color: #212121;
     text-decoration: none;
     line-height: 1.5;
-    justify-content: center;
-    display: inline;
-    margin: auto;
-
+    
 }
 
+.section {
+    display:flexbox;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .hero {
-    padding-top: 200px;
-    padding-bottom: 280px;
-    margin-bottom: 15px;
     font-size: 16px;
     line-height: 1.14;
     text-decoration: none;
-    border-radius: 0px;
     background: #2F303A;
     color: #FFFFFF;
     justify-content: center;
+    padding-top: 200px;
+    padding-bottom: 280px;
 }
 
-.main-part {
-    justify-content: center;
-    display: inline;
-    margin: auto;
+.hero h1 {
     font-size: 44px;
-    font-weight: 900;
+    font-weight: 900px;
     line-height: 60px;
-    padding-top: 200px;
-    padding-bottom: 30px;
-    padding-left: 452px;
-    padding-right: 452px;
+    color: #FFFFFF;
     text-align: center;
 }
 
 button {
+    cursor: pointer;
+    justify-content:center;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 26px;
-    margin-top: 30px;
-    margin-bottom: 200px;
-    color:#212121;
-    background-color: #F5F4FA;
-    cursor: pointer;
-    border: 3px;
-    height: 50px;
-    width: 200px;
+    display:flex;
     border-radius: 4px;
-    position:absolute;
-    display: inline;
-}
-.button {
-    display: flex;
-    justify-content: center;
+    background-color: #2196F3;
+    color: #F5F4FA;
+    padding: 10ps 41px 10px 41px;
     align-items: center;
-    border: 3px;
-    width: 200px;
+    text-align: center;
+        
 }
 
-button:hover {
-    background-color: #2196F3;
+.button-head {
+    max-width: fit-content;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 200px;
+    padding-left: 700px;
+    padding-right: 700px;
+    display:flex;
+
 }
+
 
 .text {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 94px;
-    margin-bottom: 94px;
+   
 }
 
 .business-head {
     justify-content: center;
     display: inline;
-    margin: auto;
     font-size: 36px;
     font-weight: 700;
-    padding-top: 94px;
-    padding-bottom: 50px;
-    padding-left: 624px;
-    padding-right: 624px;
     text-align: center;
 }
 
-.staff-head {
+.staff h2 {
     justify-content: center;
     display: inline;
-    margin: auto;
     font-size: 36px;
     font-weight: 700;
-    padding-top: 94px;
-    padding-bottom: 50px;
-    padding-left: 624px;
-    padding-right: 624px;
     text-align: center;
 }
 footer {
     background: #2F303A;
-    padding-top: 50px;
-    padding-bottom: 42px;
-    margin-bottom: 15px;
     font-size: 16px;
     line-height: 1.14;
     text-decoration: none;
     color: #FFFFFF;
+    display: flexbox;
    
+}
+.footer {
+    padding-left: 215px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .logo-bottom {
     color: #FFFFFF;
     font-weight: 700;
     text-decoration: none;
-    margin-top: 75px;
-    margin-bottom: 146px;
-    margin-left: 215px;
-    
+       
 }
 .logo-bottom span {
     color: #2196F3;
@@ -198,17 +186,15 @@ footer {
 }
 
 .address {
-    margin-top: 20px;
-    margin-bottom: 60px;
-    margin-left: 215px;
     font-style: normal;
+    padding-top: 20px;
 }
 
 .link-footer1 {
     color: #757575;
     text-decoration: underline;
-    margin-bottom: 9px;
-    margin-top: 9px;
+    padding-bottom: 9px;
+    padding-top: 9px;
     font-size: 14px;
    
 }
@@ -218,8 +204,8 @@ footer {
 .link-footer2 {
     color: #757575;
     font-size: 14px;
-    margin-bottom: 9px;
-    margin-top: 9px;
+    padding-bottom: 9px;
+    padding-top: 9px;
 }
 .link-footer2:hover {
     color: #2196F3 ;
